@@ -3,7 +3,7 @@ from spike.control import wait_for_seconds, wait_until, Timer
 from math import *
 
 hub = PrimeHub() 
-for i in range(0, 10, 5):
+for i in range(0, 10, -1):
     hub.light_matrix.write(i)
     hub.left_button.wait_until_pressed()
     hub.speaker.start_beep(100)
